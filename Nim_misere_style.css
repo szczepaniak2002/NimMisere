@@ -1,0 +1,114 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sidebar button:hover {
+    background-color: #0056b3;
+}
+
+.main-content {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+#game-board {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pile {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.pile span {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    margin: 2px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 2s ease;
+}
+
+.pile span.selected {
+    background-color: #ff0000;
+}
+
+.pile span.fade-out {
+    opacity: 0;
+}
+
+#controls {
+    margin: 20px 0;
+}
+
+#controls button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#controls button:hover {
+    background-color: #218838;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+

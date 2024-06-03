@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nim-Misere Game</title>
+    <link rel="stylesheet" href="Nim_misere_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Instructions</h2>
+            <p>Welcome to the Nim-Misere Game!</p>
+            <ul>
+                <li>The game starts with a number of piles of tiles.</li>
+                <li>Players take turns to remove one or more tiles from a single pile.</li>
+                <li>The player forced to take the last tile loses.</li>
+            </ul>
+            <h3>Select Difficulty:</h3>
+            <label><input type="radio" name="difficulty" value="easy"> Easy</label><br>
+            <label><input type="radio" name="difficulty" value="medium" checked> Medium</label><br>
+            <label><input type="radio" name="difficulty" value="hard"> Hard</label><br>
+            <button onclick="startGame()">Start New Game</button>
+        </div>
+        <div class="main-content">
+            <h1>Nim-Misere Game</h1>
+            <div id="game-board"></div>
+            <div id="controls">
+                <button onclick="removeSelected()">Remove Selected</button>
+            </div>
+            <div id="message"></div>
+        </div>
+    </div>
+    <script src="Nim_misere_script.js"></script>
+</body>
+</html>
+
